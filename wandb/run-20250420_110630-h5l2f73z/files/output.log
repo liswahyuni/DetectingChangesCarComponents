@@ -1,0 +1,8 @@
+ * Debugger is active!
+ * Debugger PIN: 530-692-435
+192.168.1.4 - - [20/Apr/2025 11:06:36] "GET /door_description HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 11:06:47] "GET /describe_car HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 11:07:00] "GET /describe_car HTTP/1.1" 200 -
+127.0.0.1 - - [20/Apr/2025 11:07:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Apr/2025 11:07:05] "[33mGET /favicon.ico HTTP/1.1[39m" 404 -
+127.0.0.1 - - [20/Apr/2025 11:07:32] "GET /describe_car HTTP/1.1" 200 -

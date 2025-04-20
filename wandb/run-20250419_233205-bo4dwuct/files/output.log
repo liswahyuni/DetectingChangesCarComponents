@@ -1,0 +1,12 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.4:8000
+[33mPress CTRL+C to quit
+ * Restarting with stat
+ * Serving Flask app 'app'
+ * Debug mode: on
+ * Restarting with stat
+ * Restarting with stat
+ * Restarting with stat

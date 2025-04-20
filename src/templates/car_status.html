@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Component Status</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .status-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .component {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .component:last-child {
+            border-bottom: none;
+        }
+        .status {
+            padding: 8px 16px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        .OPEN {
+            background-color: #4CAF50;
+        }
+        .CLOSED {
+            background-color: #f44336;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .refresh-button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .refresh-button:hover {
+            background-color: #1976D2;
+        }
+        .last-updated {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Component Status</h1>
+        <div class="status-card">
+            <div id="status-container"></div>
+        </div>
+        <button onclick="updateStatus()" class="refresh-button">Refresh Status</button>
+        <div id="last-updated" class="last-updated"></div>
+    </div>
+
+    <script>
+        function updateStatus() {
+            fetch('/get_car_status')
+                .then(response => response.json())
+                .then(data => {
+                    const components = [
+                        'Front Right',
+                        'Front Left', 
+                        'Rear Right',
+                        'Rear Left',
+                        'Hood'
+                    ];
+                    
+                    const container = document.getElementById('status-container');
+                    container.innerHTML = components.map(component => `
+                        <div class="component">
+                            <span>${component}</span>
+                            <span class="status ${data[component]}">${data[component]}</span>
+                        </div>
+                    `).join('');
+
+                    const now = new Date();
+                    document.getElementById('last-updated').textContent = 
+                        `Last updated: ${now.toLocaleTimeString()}`;
+                })
+                .catch(error => {
+                    console.error('Error fetching status:', error);
+                });
+        }
+
+        updateStatus();
+        setInterval(updateStatus, 2000);
+    </script>
+</body>
+</html>

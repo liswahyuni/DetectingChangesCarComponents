@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/app.py", line 27, in <module>
+    grounding_model = CarVisualGroundingModel()
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/models/visual_grounding_model.py", line 18, in __init__
+    torch.backends.warnings.disable()
+AttributeError: module 'torch.backends' has no attribute 'warnings'

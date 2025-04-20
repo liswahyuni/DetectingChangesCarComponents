@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visual Grounding</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .input-group {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type="text"] {
+            padding: 12px;
+            width: 400px;
+            margin-right: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .button {
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .result-container {
+            margin-top: 20px;
+            position: relative;
+        }
+        .result-image {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            display: none;
+        }
+        .loading {
+            display: none;
+            margin: 20px auto;
+            text-align: center;
+            color: #666;
+        }
+        .error {
+            color: #dc3545;
+            margin-top: 10px;
+            display: none;
+        }
+        .examples {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .examples p {
+            margin: 5px 0;
+            color: #666;
+            cursor: pointer;
+        }
+        .examples p:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Component Visual Grounding</h1>
+        <div class="examples">
+            <h3>Example prompts:</h3>
+            <p onclick="setPrompt(this.textContent)">Locate all open doors</p>
+            <p onclick="setPrompt(this.textContent)">Show the hood position</p>
+            <p onclick="setPrompt(this.textContent)">Find the front left door</p>
+        </div>
+        <div class="input-group">
+            <input type="text" id="promptInput" placeholder="Enter your prompt (e.g., 'Locate all open doors')">
+            <button onclick="locateObjects()" id="generateBtn" class="button">Generate</button>
+        </div>
+        <div id="loading" class="loading">Processing...</div>
+        <div id="error" class="error"></div>
+        <div class="result-container">
+            <img id="resultImage" class="result-image">
+        </div>
+    </div>
+
+    <script>
+        function setPrompt(text) {
+            document.getElementById('promptInput').value = text;
+        }
+
+        async function locateObjects() {
+            const prompt = document.getElementById('promptInput').value.trim();
+            const button = document.getElementById('generateBtn');
+            const loading = document.getElementById('loading');
+            const error = document.getElementById('error');
+            const resultImage = document.getElementById('resultImage');
+
+            if (!prompt) {
+                error.textContent = 'Please enter a prompt';
+                error.style.display = 'block';
+                return;
+            }
+
+            try {
+                button.disabled = true;
+                loading.style.display = 'block';
+                error.style.display = 'none';
+                resultImage.style.display = 'none';
+
+                const response = await fetch('/ground_objects', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ prompt })
+                });
+
+                if (!response.ok) throw new Error('Failed to process request');
+
+                const data = await response.json();
+                resultImage.src = 'data:image/jpeg;base64,' + data.image;
+                resultImage.style.display = 'block';
+            } catch (err) {
+                error.textContent = 'Error processing request. Please try again.';
+                error.style.display = 'block';
+            } finally {
+                button.disabled = false;
+                loading.style.display = 'none';
+            }
+        }
+
+        // Allow Enter key to trigger locateObjects
+        document.getElementById('promptInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') locateObjects();
+        });
+    </script>
+</body>
+</html>

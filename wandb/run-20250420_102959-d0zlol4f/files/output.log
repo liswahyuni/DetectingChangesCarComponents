@@ -1,0 +1,8 @@
+
+[34m[1mwandb[39m[22m: [33mWARNING[39m The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+Traceback (most recent call last):
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/app.py", line 17, in <module>
+    grounding_model = CarVisualGroundingModel()
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/models/visual_grounding_model.py", line 18, in __init__
+    torch.backends.warnings.disable()
+AttributeError: module 'torch.backends' has no attribute 'warnings'

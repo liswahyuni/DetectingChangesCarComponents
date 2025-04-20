@@ -1,0 +1,52 @@
+wandb_version: 1
+
+learning_rate:
+  desc: null
+  value: 0.001
+architecture:
+  desc: null
+  value: CNN
+input_shape:
+  desc: null
+  value:
+  - 160
+  - 160
+  - 3
+epochs:
+  desc: null
+  value: 100
+batch_size:
+  desc: null
+  value: 32
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.13
+    cli_version: 0.15.0
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1745080325.571446
+    t:
+      1:
+      - 2
+      - 3
+      - 12
+      - 55
+      2:
+      - 2
+      - 3
+      - 12
+      - 55
+      3:
+      - 3
+      - 8
+      - 16
+      - 23
+      4: 3.9.13
+      5: 0.15.0
+      8:
+      - 4
+      - 5
+      10:
+      - 9

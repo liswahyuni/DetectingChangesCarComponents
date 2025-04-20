@@ -1,0 +1,5 @@
+ * Debugger is active!
+ * Debugger PIN: 530-692-435
+192.168.1.4 - - [20/Apr/2025 11:03:32] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 11:03:40] "GET / HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 11:03:48] "GET /get_car_status HTTP/1.1" 200 -

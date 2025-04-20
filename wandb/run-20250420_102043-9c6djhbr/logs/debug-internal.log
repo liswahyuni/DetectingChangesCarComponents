@@ -1,0 +1,340 @@
+2025-04-20 10:20:43,087 INFO    StreamThr :84930 [internal.py:wandb_internal():86] W&B internal server running at pid: 84930, started at: 2025-04-20 10:20:43.086466
+2025-04-20 10:20:43,088 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status
+2025-04-20 10:20:43,099 INFO    WriterThread:84930 [datastore.py:open_for_write():85] open: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/run-9c6djhbr.wandb
+2025-04-20 10:20:43,100 DEBUG   SenderThread:84930 [sender.py:send():375] send: header
+2025-04-20 10:20:43,100 DEBUG   SenderThread:84930 [sender.py:send():375] send: run
+2025-04-20 10:20:43,739 INFO    SenderThread:84930 [dir_watcher.py:__init__():219] watching files in: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files
+2025-04-20 10:20:43,739 INFO    SenderThread:84930 [sender.py:_start_run_threads():1124] run started: 9c6djhbr with start time 1745119243.090393
+2025-04-20 10:20:43,739 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: summary_record
+2025-04-20 10:20:43,740 INFO    SenderThread:84930 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2025-04-20 10:20:43,741 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: check_version
+2025-04-20 10:20:43,742 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: check_version
+2025-04-20 10:20:43,883 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: run_start
+2025-04-20 10:20:43,884 DEBUG   HandlerThread:84930 [system_info.py:__init__():31] System info init
+2025-04-20 10:20:43,884 DEBUG   HandlerThread:84930 [system_info.py:__init__():46] System info init done
+2025-04-20 10:20:43,884 INFO    HandlerThread:84930 [system_monitor.py:start():181] Starting system monitor
+2025-04-20 10:20:43,885 INFO    SystemMonitor:84930 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-04-20 10:20:43,885 INFO    HandlerThread:84930 [system_monitor.py:probe():201] Collecting system info
+2025-04-20 10:20:43,886 INFO    SystemMonitor:84930 [interfaces.py:start():190] Started cpu monitoring
+2025-04-20 10:20:43,887 INFO    SystemMonitor:84930 [interfaces.py:start():190] Started disk monitoring
+2025-04-20 10:20:43,887 INFO    SystemMonitor:84930 [interfaces.py:start():190] Started gpuapple monitoring
+2025-04-20 10:20:43,887 DEBUG   HandlerThread:84930 [system_info.py:probe():195] Probing system
+2025-04-20 10:20:43,891 INFO    SystemMonitor:84930 [interfaces.py:start():190] Started memory monitoring
+2025-04-20 10:20:43,893 INFO    SystemMonitor:84930 [interfaces.py:start():190] Started network monitoring
+2025-04-20 10:20:43,893 DEBUG   HandlerThread:84930 [git.py:repo():40] git repository is invalid
+2025-04-20 10:20:43,894 DEBUG   HandlerThread:84930 [system_info.py:probe():240] Probing system done
+2025-04-20 10:20:43,894 DEBUG   HandlerThread:84930 [system_monitor.py:probe():210] {'os': 'macOS-15.3.2-arm64-arm-64bit', 'python': '3.9.13', 'heartbeatAt': '2025-04-20T03:20:43.887706', 'startedAt': '2025-04-20T03:20:43.073160', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/app.py', 'codePath': 'src/app.py', 'host': 'MacBook-Air-von-Lis.local', 'username': 'liswahyuni', 'executable': '/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3204, 'min': 600, 'max': 3204}, 'cpu_freq_per_core': [{'current': 3204, 'min': 600, 'max': 3204}], 'disk': {'total': 228.27386474609375, 'used': 10.388595581054688}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 8.0}}
+2025-04-20 10:20:43,894 INFO    HandlerThread:84930 [system_monitor.py:probe():211] Finished collecting system info
+2025-04-20 10:20:43,894 INFO    HandlerThread:84930 [system_monitor.py:probe():214] Publishing system info
+2025-04-20 10:20:43,894 DEBUG   HandlerThread:84930 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-04-20 10:20:43,895 DEBUG   HandlerThread:84930 [system_info.py:_save_pip():67] Saving pip packages done
+2025-04-20 10:20:43,896 INFO    HandlerThread:84930 [system_monitor.py:probe():216] Finished publishing system info
+2025-04-20 10:20:43,896 DEBUG   SenderThread:84930 [sender.py:send():375] send: files
+2025-04-20 10:20:43,896 INFO    SenderThread:84930 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2025-04-20 10:20:43,901 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:20:43,902 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:20:43,985 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: get_summary
+2025-04-20 10:20:44,317 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:20:44,317 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:20:44,318 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:20:44,318 DEBUG   SenderThread:84930 [sender.py:send():375] send: files
+2025-04-20 10:20:44,318 INFO    SenderThread:84930 [sender.py:_save_file():1378] saving file model-best.h5 with policy live
+2025-04-20 10:20:44,318 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:20:44,746 INFO    Thread-25 :84930 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files/wandb-metadata.json
+2025-04-20 10:20:44,746 INFO    Thread-25 :84930 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files/output.log
+2025-04-20 10:20:44,746 INFO    Thread-25 :84930 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files/wandb-summary.json
+2025-04-20 10:20:44,747 INFO    Thread-25 :84930 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files/requirements.txt
+2025-04-20 10:20:44,811 INFO    wandb-upload_0:84930 [upload_job.py:push():137] Uploaded file /var/folders/s5/m528_dfj42ggvtqwcz6_rrgh0000gn/T/tmps4r8iavbwandb/y6j9hmq6-wandb-metadata.json
+2025-04-20 10:20:45,372 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:20:46,752 INFO    Thread-25 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files/output.log
+2025-04-20 10:20:47,300 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:20:48,092 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:20:48,753 INFO    Thread-25 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files/output.log
+2025-04-20 10:20:50,760 INFO    Thread-25 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files/output.log
+2025-04-20 10:20:52,321 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:20:53,111 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:20:56,979 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:20:56,980 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:20:58,131 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:20:58,281 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:20:58,897 INFO    Thread-12 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102026-wdr8stq1/files/config.yaml
+2025-04-20 10:20:58,907 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:20:58,907 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:21:03,278 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:03,563 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:08,295 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:08,577 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:11,983 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:21:11,984 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:21:13,309 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:13,836 INFO    Thread-25 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files/config.yaml
+2025-04-20 10:21:13,910 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:21:13,910 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:21:14,305 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:19,192 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:19,320 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:24,213 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:24,332 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:26,961 DEBUG   SystemMonitor:84930 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-04-20 10:21:26,962 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:21:26,962 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:21:26,986 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:21:26,987 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:21:28,912 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:21:28,913 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:21:30,168 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:30,258 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:30,983 INFO    Thread-12 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102026-wdr8stq1/files/config.yaml
+2025-04-20 10:21:35,182 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:35,543 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:40,195 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:40,558 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:41,991 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:21:41,991 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:21:43,893 DEBUG   SystemMonitor:84930 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-04-20 10:21:43,894 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:21:43,894 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:21:43,914 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:21:43,914 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:21:46,170 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:46,416 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:46,926 INFO    Thread-25 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files/config.yaml
+2025-04-20 10:21:51,432 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:51,519 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:56,452 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:56,531 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:21:56,967 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:21:56,992 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:21:56,992 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:21:58,915 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:21:58,916 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:22:02,179 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:02,291 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:07,192 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:07,303 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:11,994 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:22:11,995 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:22:12,209 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:12,321 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:13,899 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:22:13,920 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:22:13,920 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:22:17,217 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:17,332 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:22,232 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:22,344 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:26,974 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:22:26,994 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:22:26,995 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:22:27,242 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:28,319 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:28,924 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:22:28,924 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:22:32,273 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:33,331 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:37,288 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:38,343 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:42,000 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:22:42,000 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:22:42,305 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:43,418 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:43,900 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:22:43,926 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:22:43,926 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:22:47,367 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:48,441 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:52,378 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:53,459 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:56,996 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:22:57,008 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:22:57,009 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:22:57,208 INFO    Thread-25 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102043-9c6djhbr/files/output.log
+2025-04-20 10:22:58,077 INFO    memory    :84930 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2025-04-20 10:22:58,077 DEBUG   SystemMonitor:84930 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2025-04-20 10:22:58,077 DEBUG   SystemMonitor:84930 [system_monitor.py:_start():170] Publishing last batch of metrics
+2025-04-20 10:22:58,078 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:22:58,078 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:22:59,357 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:00,275 INFO    Thread-12 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102026-wdr8stq1/files/output.log
+2025-04-20 10:23:03,085 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:04,196 INFO    StreamThr :84930 [internal.py:wandb_internal():86] W&B internal server running at pid: 84930, started at: 2025-04-20 10:23:04.194958
+2025-04-20 10:23:04,198 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status
+2025-04-20 10:23:04,202 INFO    WriterThread:84930 [datastore.py:open_for_write():85] open: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/run-9qo6b51t.wandb
+2025-04-20 10:23:04,203 DEBUG   SenderThread:84930 [sender.py:send():375] send: header
+2025-04-20 10:23:04,203 DEBUG   SenderThread:84930 [sender.py:send():375] send: run
+2025-04-20 10:23:04,370 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:04,941 INFO    SenderThread:84930 [dir_watcher.py:__init__():219] watching files in: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files
+2025-04-20 10:23:04,942 INFO    SenderThread:84930 [sender.py:_start_run_threads():1124] run started: 9qo6b51t with start time 1745119384.196506
+2025-04-20 10:23:04,942 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: summary_record
+2025-04-20 10:23:04,942 INFO    SenderThread:84930 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2025-04-20 10:23:04,942 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: check_version
+2025-04-20 10:23:04,942 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: check_version
+2025-04-20 10:23:05,054 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: run_start
+2025-04-20 10:23:05,055 DEBUG   HandlerThread:84930 [system_info.py:__init__():31] System info init
+2025-04-20 10:23:05,055 DEBUG   HandlerThread:84930 [system_info.py:__init__():46] System info init done
+2025-04-20 10:23:05,055 INFO    HandlerThread:84930 [system_monitor.py:start():181] Starting system monitor
+2025-04-20 10:23:05,055 INFO    SystemMonitor:84930 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-04-20 10:23:05,055 INFO    HandlerThread:84930 [system_monitor.py:probe():201] Collecting system info
+2025-04-20 10:23:05,056 INFO    SystemMonitor:84930 [interfaces.py:start():190] Started cpu monitoring
+2025-04-20 10:23:05,056 DEBUG   HandlerThread:84930 [system_info.py:probe():195] Probing system
+2025-04-20 10:23:05,057 INFO    SystemMonitor:84930 [interfaces.py:start():190] Started disk monitoring
+2025-04-20 10:23:05,057 INFO    SystemMonitor:84930 [interfaces.py:start():190] Started gpuapple monitoring
+2025-04-20 10:23:05,059 INFO    SystemMonitor:84930 [interfaces.py:start():190] Started memory monitoring
+2025-04-20 10:23:05,061 INFO    SystemMonitor:84930 [interfaces.py:start():190] Started network monitoring
+2025-04-20 10:23:05,061 DEBUG   HandlerThread:84930 [git.py:repo():40] git repository is invalid
+2025-04-20 10:23:05,061 DEBUG   HandlerThread:84930 [system_info.py:probe():240] Probing system done
+2025-04-20 10:23:05,061 DEBUG   HandlerThread:84930 [system_monitor.py:probe():210] {'os': 'macOS-15.3.2-arm64-arm-64bit', 'python': '3.9.13', 'heartbeatAt': '2025-04-20T03:23:05.057027', 'startedAt': '2025-04-20T03:23:04.183705', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/app.py', 'codePath': 'src/app.py', 'host': 'MacBook-Air-von-Lis.local', 'username': 'liswahyuni', 'executable': '/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3204, 'min': 600, 'max': 3204}, 'cpu_freq_per_core': [{'current': 3204, 'min': 600, 'max': 3204}], 'disk': {'total': 228.27386474609375, 'used': 10.388595581054688}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 8.0}}
+2025-04-20 10:23:05,061 INFO    HandlerThread:84930 [system_monitor.py:probe():211] Finished collecting system info
+2025-04-20 10:23:05,061 INFO    HandlerThread:84930 [system_monitor.py:probe():214] Publishing system info
+2025-04-20 10:23:05,061 DEBUG   HandlerThread:84930 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-04-20 10:23:05,062 DEBUG   HandlerThread:84930 [system_info.py:_save_pip():67] Saving pip packages done
+2025-04-20 10:23:05,062 INFO    HandlerThread:84930 [system_monitor.py:probe():216] Finished publishing system info
+2025-04-20 10:23:05,063 DEBUG   SenderThread:84930 [sender.py:send():375] send: files
+2025-04-20 10:23:05,063 INFO    SenderThread:84930 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2025-04-20 10:23:05,066 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:23:05,067 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:23:05,156 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: get_summary
+2025-04-20 10:23:05,366 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:23:05,366 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:23:05,366 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:23:05,367 DEBUG   SenderThread:84930 [sender.py:send():375] send: files
+2025-04-20 10:23:05,367 INFO    SenderThread:84930 [sender.py:_save_file():1378] saving file model-best.h5 with policy live
+2025-04-20 10:23:05,367 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:23:05,805 INFO    wandb-upload_0:84930 [upload_job.py:push():137] Uploaded file /var/folders/s5/m528_dfj42ggvtqwcz6_rrgh0000gn/T/tmpk57na86swandb/9ini7byh-wandb-metadata.json
+2025-04-20 10:23:05,949 INFO    Thread-38 :84930 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files/requirements.txt
+2025-04-20 10:23:05,949 INFO    Thread-38 :84930 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files/output.log
+2025-04-20 10:23:05,950 INFO    Thread-38 :84930 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files/wandb-summary.json
+2025-04-20 10:23:05,950 INFO    Thread-38 :84930 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files/wandb-metadata.json
+2025-04-20 10:23:07,114 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:23:07,953 INFO    Thread-38 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files/output.log
+2025-04-20 10:23:08,098 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:09,393 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:09,912 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:09,959 INFO    Thread-38 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files/output.log
+2025-04-20 10:23:11,960 INFO    Thread-38 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files/output.log
+2025-04-20 10:23:12,007 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:23:12,008 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:23:13,117 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:15,318 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:15,774 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:18,133 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:20,071 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:23:20,071 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:23:20,339 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:21,494 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:23,151 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:25,363 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:26,518 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:27,001 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:23:27,009 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:23:27,010 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:23:28,168 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:30,415 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:31,538 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:33,186 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:35,076 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:23:35,077 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:23:35,432 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:37,464 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:38,059 INFO    Thread-38 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files/config.yaml
+2025-04-20 10:23:38,205 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:40,454 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:42,012 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:23:42,013 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:23:42,830 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:43,226 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:46,351 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:47,851 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:48,244 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:50,080 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:23:50,080 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:23:51,360 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:53,254 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:53,366 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:56,374 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:57,002 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:23:57,018 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:23:57,019 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:23:58,267 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:23:58,381 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:01,377 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:03,280 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:03,401 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:05,063 DEBUG   SystemMonitor:84930 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-04-20 10:24:05,064 DEBUG   SenderThread:84930 [sender.py:send():375] send: telemetry
+2025-04-20 10:24:05,064 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:24:05,083 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:24:05,083 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:24:06,392 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:08,297 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:08,439 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:09,184 INFO    Thread-38 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files/config.yaml
+2025-04-20 10:24:11,410 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:12,019 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:24:12,020 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:24:13,310 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:13,719 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:16,440 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:18,325 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:18,737 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:20,088 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:24:20,088 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:24:21,458 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:23,342 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:24,391 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:26,475 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:27,003 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:24:27,019 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:24:27,019 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:24:28,354 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:29,403 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:32,296 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:33,365 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:34,423 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:35,069 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:24:35,092 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:24:35,092 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:24:37,318 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:38,380 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:39,438 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:42,024 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-20 10:24:42,026 DEBUG   SenderThread:84930 [sender.py:send_request():402] send_request: stop_status
+2025-04-20 10:24:42,277 INFO    Thread-38 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/files/output.log
+2025-04-20 10:24:42,417 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:43,232 INFO    memory    :84930 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2025-04-20 10:24:43,232 DEBUG   SystemMonitor:84930 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2025-04-20 10:24:43,233 DEBUG   SystemMonitor:84930 [system_monitor.py:_start():170] Publishing last batch of metrics
+2025-04-20 10:24:43,233 DEBUG   SenderThread:84930 [sender.py:send():375] send: stats
+2025-04-20 10:24:43,392 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:44,670 INFO    Thread-12 :84930 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102026-wdr8stq1/files/output.log
+2025-04-20 10:24:45,239 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:47,426 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:48,404 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status_report
+2025-04-20 10:24:48,854 INFO    StreamThr :84930 [internal.py:wandb_internal():86] W&B internal server running at pid: 84930, started at: 2025-04-20 10:24:48.852926
+2025-04-20 10:24:48,856 DEBUG   HandlerThread:84930 [handler.py:handle_request():144] handle_request: status
+2025-04-20 10:24:48,865 INFO    WriterThread:84930 [datastore.py:open_for_write():85] open: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102448-mwkf4e35/run-mwkf4e35.wandb
+2025-04-20 10:24:48,866 DEBUG   SenderThread:84930 [sender.py:send():375] send: header
+2025-04-20 10:24:48,866 DEBUG   SenderThread:84930 [sender.py:send():375] send: run
+2025-04-20 10:24:49,446 INFO    SenderThread:84930 [dir_watcher.py:__init__():219] watching files in: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102448-mwkf4e35/files
+2025-04-20 10:24:49,446 INFO    SenderThread:84930 [sender.py:_start_run_threads():1124] run started: mwkf4e35 with start time 1745119488.855231
+2025-04-20 10:24:49,561 WARNING StreamThr :84930 [internal.py:is_dead():414] Internal process exiting, parent pid 84885 disappeared
+2025-04-20 10:24:49,561 ERROR   StreamThr :84930 [internal.py:wandb_internal():152] Internal process shutdown.
+2025-04-20 10:24:49,859 WARNING StreamThr :84930 [internal.py:is_dead():414] Internal process exiting, parent pid 84885 disappeared
+2025-04-20 10:24:49,859 ERROR   StreamThr :84930 [internal.py:wandb_internal():152] Internal process shutdown.
+2025-04-20 10:24:49,867 INFO    HandlerThread:84930 [handler.py:finish():845] shutting down handler
+2025-04-20 10:24:49,868 INFO    WriterThread:84930 [datastore.py:close():298] close: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102448-mwkf4e35/run-mwkf4e35.wandb
+2025-04-20 10:24:50,255 INFO    HandlerThread:84930 [handler.py:finish():845] shutting down handler
+2025-04-20 10:24:50,255 INFO    HandlerThread:84930 [system_monitor.py:finish():190] Stopping system monitor
+2025-04-20 10:24:50,255 INFO    HandlerThread:84930 [interfaces.py:finish():202] Joined cpu monitor
+2025-04-20 10:24:50,255 INFO    HandlerThread:84930 [interfaces.py:finish():202] Joined disk monitor
+2025-04-20 10:24:50,256 INFO    HandlerThread:84930 [interfaces.py:finish():202] Joined gpuapple monitor
+2025-04-20 10:24:50,256 INFO    HandlerThread:84930 [interfaces.py:finish():202] Joined memory monitor
+2025-04-20 10:24:50,256 INFO    HandlerThread:84930 [interfaces.py:finish():202] Joined network monitor
+2025-04-20 10:24:50,256 INFO    WriterThread:84930 [datastore.py:close():298] close: /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250420_102304-9qo6b51t/run-9qo6b51t.wandb
+2025-04-20 10:24:50,257 INFO    SenderThread:84930 [sender.py:finish():1550] shutting down sender
+2025-04-20 10:24:50,449 INFO    SenderThread:84930 [sender.py:finish():1550] shutting down sender
+2025-04-20 10:24:50,450 INFO    SenderThread:84930 [dir_watcher.py:finish():365] shutting down directory watcher
+2025-04-20 10:24:50,860 INFO    MainThread:84930 [internal.py:handle_exit():76] Internal process exited
+2025-04-20 10:24:50,861 INFO    MainThread:84930 [internal.py:handle_exit():76] Internal process exited
+2025-04-20 10:24:50,861 INFO    MainThread:84930 [internal.py:handle_exit():76] Internal process exited
+2025-04-20 10:24:50,861 INFO    MainThread:84930 [internal.py:handle_exit():76] Internal process exited

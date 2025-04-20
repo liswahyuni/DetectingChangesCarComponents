@@ -1,0 +1,98 @@
+ * Debugger is active!
+ * Debugger PIN: 530-692-435
+192.168.1.4 - - [20/Apr/2025 10:39:05] "GET / HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:11] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:19] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:24] "GET /describe_car HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:28] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:33] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:43] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:45] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:53] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:56] "[35m[1mPOST /ground_objects HTTP/1.1[39m[22m" 500 -
+Traceback (most recent call last):
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/app.py", line 89, in ground_objects
+    result_img = grounding_model.locate_objects(img, text_prompt)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/models/visual_grounding_model.py", line 31, in locate_objects
+    predictions = self.model(image)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/pipelines/object_detection.py", line 106, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/pipelines/base.py", line 1379, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/pipelines/base.py", line 1385, in run_single
+    model_inputs = self.preprocess(inputs, **preprocess_params)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/pipelines/object_detection.py", line 109, in preprocess
+    image = load_image(image, timeout=timeout)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/image_utils.py", line 532, in load_image
+    raise TypeError(
+TypeError: Incorrect format used for image. Should be an url linking to an image, a base64 string, a local path, or a PIL image.
+192.168.1.4 - - [20/Apr/2025 10:39:57] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:58] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:39:58] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:06] "GET /describe_car HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:19] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:19] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:19] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:20] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:21] "[35m[1mPOST /ground_objects HTTP/1.1[39m[22m" 500 -
+Traceback (most recent call last):
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/app.py", line 89, in ground_objects
+    result_img = grounding_model.locate_objects(img, text_prompt)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/models/visual_grounding_model.py", line 31, in locate_objects
+    predictions = self.model(image)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/pipelines/object_detection.py", line 106, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/pipelines/base.py", line 1379, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/pipelines/base.py", line 1385, in run_single
+    model_inputs = self.preprocess(inputs, **preprocess_params)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/pipelines/object_detection.py", line 109, in preprocess
+    image = load_image(image, timeout=timeout)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/image_utils.py", line 532, in load_image
+    raise TypeError(
+TypeError: Incorrect format used for image. Should be an url linking to an image, a base64 string, a local path, or a PIL image.
+192.168.1.4 - - [20/Apr/2025 10:40:30] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:44] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:44] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:45] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:49] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:49] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:40:57] "GET /describe_car HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:41:14] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:41:20] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:41:20] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:41:20] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:41:24] "GET /get_car_status HTTP/1.1" 200 -
+192.168.1.4 - - [20/Apr/2025 10:41:25] "GET /get_car_status HTTP/1.1" 200 -

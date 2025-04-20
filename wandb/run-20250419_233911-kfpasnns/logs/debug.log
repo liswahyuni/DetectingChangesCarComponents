@@ -1,0 +1,27 @@
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_setup.py:_flush():76] Configure stats pid to 32609
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_setup.py:_flush():76] Loading settings from /Users/liswahyuni/.config/wandb/settings
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_setup.py:_flush():76] Loading settings from /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/settings
+2025-04-19 23:39:11,815 WARNING MainThread:32609 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_SERVICE
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/app.py', 'program': '/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/app.py'}
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_init.py:_log_setup():507] Logging user logs to /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250419_233911-kfpasnns/logs/debug.log
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_init.py:_log_setup():508] Logging internal logs to /Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/wandb/run-20250419_233911-kfpasnns/logs/debug-internal.log
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_init.py:init():547] calling init triggers
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'architecture': 'CNN', 'input_shape': (160, 160, 3), 'epochs': 100, 'batch_size': 32}
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_init.py:init():595] starting backend
+2025-04-19 23:39:11,815 INFO    MainThread:32609 [wandb_init.py:init():599] setting up manager
+2025-04-19 23:39:11,819 INFO    MainThread:32609 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-04-19 23:39:11,822 INFO    MainThread:32609 [wandb_init.py:init():605] backend started and connected
+2025-04-19 23:39:11,826 INFO    MainThread:32609 [wandb_init.py:init():695] updated telemetry
+2025-04-19 23:39:11,827 INFO    MainThread:32609 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2025-04-19 23:39:12,572 INFO    MainThread:32609 [wandb_run.py:_on_init():2176] communicating current version
+2025-04-19 23:39:12,787 INFO    MainThread:32609 [wandb_run.py:_on_init():2185] got version response upgrade_message: "wandb version 0.19.9 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-04-19 23:39:12,787 INFO    MainThread:32609 [wandb_init.py:init():782] starting run threads in backend
+2025-04-19 23:39:12,804 INFO    MainThread:32609 [wandb_run.py:_console_start():2157] atexit reg
+2025-04-19 23:39:12,805 INFO    MainThread:32609 [wandb_run.py:_redirect():2012] redirect: SettingsConsole.WRAP_RAW
+2025-04-19 23:39:12,806 INFO    MainThread:32609 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2025-04-19 23:39:12,806 INFO    MainThread:32609 [wandb_run.py:_redirect():2102] Redirects installed.
+2025-04-19 23:39:12,806 INFO    MainThread:32609 [wandb_init.py:init():824] run started, returning control to user process

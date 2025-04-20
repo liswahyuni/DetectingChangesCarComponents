@@ -1,0 +1,289 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+config.json: 100%|████████████████████████████████████| 4.61k/4.61k [00:00<00:00, 1.21MB/s]
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pytorch_model.bin: 100%|████████████████████████████████| 982M/982M [04:55<00:00, 3.32MB/s]
+Config of the encoder: <class 'transformers.models.vit.modeling_vit.ViTModel'> is overwritten by shared encoder config: ViTConfig {
+  "architectures": [
+    "ViTModel"
+  ],
+  "attention_probs_dropout_prob": 0.0,
+  "encoder_stride": 16,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.0,
+  "hidden_size": 768,
+  "image_size": 224,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "model_type": "vit",
+  "num_attention_heads": 12,
+  "num_channels": 3,
+  "num_hidden_layers": 12,
+  "patch_size": 16,
+  "pooler_act": "tanh",
+  "pooler_output_size": 768,
+  "qkv_bias": true,
+  "torch_dtype": "float32",
+  "transformers_version": "4.51.3"
+}
+Config of the decoder: <class 'transformers.models.gpt2.modeling_gpt2.GPT2LMHeadModel'> is overwritten by shared decoder config: GPT2Config {
+  "activation_function": "gelu_new",
+  "add_cross_attention": true,
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "decoder_start_token_id": 50256,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "initializer_range": 0.02,
+  "is_decoder": true,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_inner": null,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "pad_token_id": 50256,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "torch_dtype": "float32",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "vocab_size": 50257
+}
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+preprocessor_config.json: 100%|████████████████████████████████████████████████████████████████████████████████| 228/228 [00:00<00:00, 102kB/s]
+tokenizer_config.json: 100%|███████████████████████████████████████████████████████████████████████████████████| 241/241 [00:00<00:00, 189kB/s]
+vocab.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 798k/798k [00:01<00:00, 734kB/s]
+merges.txt: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 456k/456k [00:00<00:00, 647kB/s]
+tokenizer.json: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1.36M/1.36M [00:01<00:00, 1.05MB/s]
+special_tokens_map.json: 100%|████████████████████████████████████████████████████████████████████████████████| 120/120 [00:00<00:00, 51.0kB/s]
+config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████| 4.59k/4.59k [00:00<00:00, 74.3kB/s]
+config.json:   0%|                                                                                                 | 0.00/4.59k [00:00<?, ?B/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Traceback (most recent call last):██████████████████████████████████████████████████████████████████████████| 167M/167M [01:45<00:00, 1.57MB/s]
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/app.py", line 17, in <module>
+    grounding_model = CarVisualGroundingModel()
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/src/models/visual_grounding_model.py", line 8, in __init__
+    self.model = pipeline("object-detection", model="facebook/detr-resnet-50")
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/modeling_utils.py", line 4342, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/models/detr/modeling_detr.py", line 1366, in __init__
+    self.model = DetrModel(config)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/models/detr/modeling_detr.py", line 1176, in __init__
+    backbone = DetrConvEncoder(config)
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/models/detr/modeling_detr.py", line 336, in __init__
+    requires_backends(self, ["timm"])
+  File "/Users/liswahyuni/Documents/PrincipalAIEngineer_SMARTM2M_Indonesia/venv/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1828, in requires_backends
+    raise ImportError("".join(failed))
+ImportError:
+DetrConvEncoder requires the timm library but it was not found in your environment. You can install it with pip:
+`pip install timm`. Please note that you may need to restart your runtime after installation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+model.safetensors: 100%|████████████████████████████████████████████████████████████████████████████████████| 982M/982M [06:08<00:00, 2.66MB/s]
